@@ -1,0 +1,523 @@
+Started creating the environment!
+Start loading the latest Checkpoints!
+The global step is: None
+['__add__', '__annotations__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '_asdict', '_field_defaults', '_fields', '_make', '_replace', 'count', 'discount', 'index', 'is_first', 'is_last', 'is_mid', 'observation', 'reward', 'step_type']
+******* Base Model info *******
+Congestion values 0.8015117616266696
+Wirelength values 0.1144558618965109
+Density values 0.674093722926105
+Finished placing all the nodes
+Model: "policy_location_head"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_8 (Dense)             (1, 2048)                 67584     
+                                                                 
+ re_lu_7 (ReLU)              (1, 2048)                 0         
+                                                                 
+ reshape (Reshape)           (1, 8, 8, 32)             0         
+                                                                 
+ conv2d_transpose (Conv2DTra  (1, 16, 16, 16)          4624      
+ nspose)                                                         
+                                                                 
+ re_lu_8 (ReLU)              (1, 16, 16, 16)           0         
+                                                                 
+ conv2d_transpose_1 (Conv2DT  (1, 32, 32, 8)           1160      
+ ranspose)                                                       
+                                                                 
+ re_lu_9 (ReLU)              (1, 32, 32, 8)            0         
+                                                                 
+ conv2d_transpose_2 (Conv2DT  (1, 64, 64, 4)           292       
+ ranspose)                                                       
+                                                                 
+ re_lu_10 (ReLU)             (1, 64, 64, 4)            0         
+                                                                 
+ conv2d_transpose_3 (Conv2DT  (1, 128, 128, 2)         74        
+ ranspose)                                                       
+                                                                 
+ re_lu_11 (ReLU)             (1, 128, 128, 2)          0         
+                                                                 
+ conv2d_transpose_4 (Conv2DT  (1, 128, 128, 1)         19        
+ ranspose)                                                       
+                                                                 
+ flatten (Flatten)           (1, 16384)                0         
+                                                                 
+=================================================================
+Total params: 73,753
+Trainable params: 73,753
+Non-trainable params: 0
+_________________________________________________________________
+Actor Net:  None
+****************************** At the generation 0
+Currently in generation 0 and generating child 0
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Recorded all the info of the mutated model
+
+Currently in generation 0 and generating child 1
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Recorded all the info of the mutated model
+
+Currently in generation 0 and generating child 2
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Recorded all the info of the mutated model
+
+Currently in generation 0 and generating child 3
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Recorded all the info of the mutated model
+
+Currently in generation 0 and generating child 4
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Recorded all the info of the mutated model
+
+Currently in generation 0 and generating child 5
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Recorded all the info of the mutated model
+
+Currently in generation 0 and generating child 6
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Recorded all the info of the mutated model
+
+Currently in generation 0 and generating child 7
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Recorded all the info of the mutated model
+
+Currently in generation 0 and generating child 8
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Recorded all the info of the mutated model
+
+Density track: [0.674093722926105, 0.650964394659386, 0.9301059965640306, 0.7824635414833838, 0.8024943242031333, 0.8310638673755717, 0.7558737502837726, 0.7587053628479873, 1.064709805489965, 0.8662561340826765]
+Congestion track: [0.8015117616266696, 0.7765178974442978, 0.8806453130942927, 0.8668673097660446, 0.8631925360454871, 0.8517380525989185, 0.8033299282045918, 0.8096267078646313, 0.8885958537281021, 0.8299558591374785]
+Wirelength track: [0.1144558618965109, 0.111641581525123, 0.1155985216089111, 0.1254979625157548, 0.1262445467672398, 0.1210291817139935, 0.1148028424015905, 0.1213496627754106, 0.1121291313439338, 0.1157920503448726]
+Valid placement: [True, True, True, True, True, True, True, True, True, True]
+****************************** At the generation 1
+$$$$$$$$$$$$$$$ Found the best index at 1
+Deleting the remiaing models and info, current size is: 1
+******* Base Model info  in generation 1 *******
+Congestion values 0.7765178974442978
+Wirelength values 0.111641581525123
+Density values 0.650964394659386
+Currently in generation 1 and generating child 0
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 1 and generating child 1
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 1 and generating child 2
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 1 and generating child 3
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 1 and generating child 4
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 1 and generating child 5
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Currently in generation 1 and generating child 6
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 1 and generating child 7
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 1 and generating child 8
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Density track: [0.650964394659386, 0.8934980543948621, 0.8882983228503055, 0.9001627516179684, 0.911458771128259, 0.9033955782807204, 0.9016164908785521, 0.9170794411613831, 0.9240307262463046, 0.9253991709556381]
+Congestion track: [0.7765178974442978, 0.8363838537939919, 0.8813767083637479, 0.8718424903206204, 0.8963159833845138, 0.9018523383842969, 0.8834460001302129, 0.8910574844417725, 0.897380888575277, 0.8956274137205523]
+Wirelength track: [0.111641581525123, 0.1154090558184837, 0.11890258462924, 0.1190085079975666, 0.1245280130923774, 0.1251213633137392, 0.1216009680362486, 0.1230558511644587, 0.1274101804726185, 0.1241861691610517]
+****************************** At the generation 2
+$$$$$$$$$$$$$$$ Found the best index at 0
+Deleting the remiaing models and info, current size is: 1
+******* Base Model info  in generation 2 *******
+Congestion values 0.7765178974442978
+Wirelength values 0.111641581525123
+Density values 0.650964394659386
+Currently in generation 2 and generating child 0
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 2 and generating child 1
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 2 and generating child 2
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 2 and generating child 3
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 2 and generating child 4
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 2 and generating child 5
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 2 and generating child 6
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 2 and generating child 7
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Currently in generation 2 and generating child 8
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Density track: [0.650964394659386, 0.9347405860914545, 0.9347405860914545, 0.9347405860914545, 0.9394459373139538, 0.9363080464060647, 0.9204032845965642, 0.9191552309412228, 0.9303223622547734, 1.154910500813844]
+Congestion track: [0.7765178974442978, 0.8892741171619236, 0.8892741171619236, 0.8892741171619233, 0.8945885468754515, 0.8917599390282923, 0.8860409192442783, 0.8904504875923395, 0.8757496929970857, 0.8829928914266855]
+Wirelength track: [0.111641581525123, 0.1223306759780635, 0.1223306759780635, 0.1223306759780635, 0.1240503393491475, 0.1237772005668636, 0.1240212317158246, 0.1218638345381978, 0.1174862656343814, 0.09048715113289414]
+****************************** At the generation 3
+$$$$$$$$$$$$$$$ Found the best index at 0
+Deleting the remiaing models and info, current size is: 1
+******* Base Model info  in generation 3 *******
+Congestion values 0.7765178974442978
+Wirelength values 0.111641581525123
+Density values 0.650964394659386
+Currently in generation 3 and generating child 0
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 3 and generating child 1
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 3 and generating child 2
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 3 and generating child 3
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Currently in generation 3 and generating child 4
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Currently in generation 3 and generating child 5
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 3 and generating child 6
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 3 and generating child 7
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 3 and generating child 8
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Density track: [0.650964394659386, 1.154447809564644, 1.154447809564644, 0.8440722188919197, 0.8440722188919197, 0.8674979466257127, 0.8674979466257127, 0.8674979466257127, 0.8674979466257127, 0.8674979466257127]
+Congestion track: [0.7765178974442978, 0.879434962030582, 0.879434962030582, 0.8700375176925439, 0.8700375176925442, 0.8700186643036066, 0.8700186643036066, 0.8700186643036062, 0.8700186643036063, 0.8700186643036065]
+Wirelength track: [0.111641581525123, 0.09273800769570509, 0.09273800769570509, 0.1204976824536063, 0.1204976824536063, 0.1164774687880237, 0.1164774687880237, 0.1164774687880237, 0.1164774687880237, 0.1164774687880237]
+****************************** At the generation 4
+$$$$$$$$$$$$$$$ Found the best index at 0
+Deleting the remiaing models and info, current size is: 1
+******* Base Model info  in generation 4 *******
+Congestion values 0.7765178974442978
+Wirelength values 0.111641581525123
+Density values 0.650964394659386
+Currently in generation 4 and generating child 0
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 4 and generating child 1
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Currently in generation 4 and generating child 2
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 4 and generating child 3
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 4 and generating child 4
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 4 and generating child 5
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 4 and generating child 6
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 4 and generating child 7
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 4 and generating child 8
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Density track: [0.650964394659386, 0.8308463376074455, 0.8542448078379787, 0.8542448078379787, 0.8542448078379787, 0.8542448078379787, 0.8542448078379787, 0.9894785588077561, 0.9445741535591408, 0.8551927031553223]
+Congestion track: [0.7765178974442978, 0.8519553480562949, 0.8454644974981558, 0.8454644974981559, 0.8454644974981559, 0.8454644974981558, 0.8454644974981557, 0.8820684086675784, 0.8931175184229029, 0.8995975175863913]
+Wirelength track: [0.111641581525123, 0.1172627437791225, 0.1154772767652492, 0.1154772767652492, 0.1154772767652492, 0.1154772767652492, 0.1154772767652492, 0.1094905146974014, 0.1214670606679948, 0.1319339992283904]
+****************************** At the generation 5
+$$$$$$$$$$$$$$$ Found the best index at 0
+Deleting the remiaing models and info, current size is: 1
+******* Base Model info  in generation 5 *******
+Congestion values 0.7765178974442978
+Wirelength values 0.111641581525123
+Density values 0.650964394659386
+Currently in generation 5 and generating child 0
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 5 and generating child 1
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 5 and generating child 2
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 5 and generating child 3
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 5 and generating child 4
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 5 and generating child 5
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 5 and generating child 6
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 5 and generating child 7
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 5 and generating child 8
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Density track: [0.650964394659386, 0.854227173864248, 0.838015662771155, 0.8680380062643259, 0.8610455924948205, 0.862441375445113, 0.8657978142772711, 0.8904430662432706, 0.9066833200980774, 0.8789666695285022]
+Congestion track: [0.7765178974442978, 0.8651573534525546, 0.8722417886831262, 0.870439247037633, 0.8768943652101071, 0.8960371698556557, 0.8940540357124042, 0.8878140536246713, 0.9064458908441014, 0.8751454713446993]
+Wirelength track: [0.111641581525123, 0.1231024912191416, 0.1248197962202267, 0.1197605901566417, 0.1248251416571797, 0.1270248201310498, 0.1276665292943053, 0.12409397116243, 0.1287835284779775, 0.121360335713423]
+****************************** At the generation 6
+$$$$$$$$$$$$$$$ Found the best index at 0
+Deleting the remiaing models and info, current size is: 1
+******* Base Model info  in generation 6 *******
+Congestion values 0.7765178974442978
+Wirelength values 0.111641581525123
+Density values 0.650964394659386
+Currently in generation 6 and generating child 0
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 6 and generating child 1
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 6 and generating child 2
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 6 and generating child 3
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Currently in generation 6 and generating child 4
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 6 and generating child 5
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Currently in generation 6 and generating child 6
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 6 and generating child 7
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 6 and generating child 8
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Density track: [0.650964394659386, 0.8789666695285022, 0.8535433950515228, 0.8567041079906542, 0.92180861521602, 0.922441938254823, 0.9384597154450413, 1.160851860407509, 1.160851860407509, 1.160851860407509]
+Congestion track: [0.7765178974442978, 0.8751454713446992, 0.8773150221445521, 0.878276047833219, 0.8922527720098674, 0.9027161896722586, 0.8935129312243373, 0.8880997468517713, 0.8880997468517708, 0.8880997468517713]
+Wirelength track: [0.111641581525123, 0.121360335713423, 0.1211323019077644, 0.1298756747570789, 0.1197029632185236, 0.1228250669361023, 0.1202617241692692, 0.09278764635125274, 0.09278764635125274, 0.09278764635125274]
+****************************** At the generation 7
+$$$$$$$$$$$$$$$ Found the best index at 0
+Deleting the remiaing models and info, current size is: 1
+******* Base Model info  in generation 7 *******
+Congestion values 0.7765178974442978
+Wirelength values 0.111641581525123
+Density values 0.650964394659386
+Currently in generation 7 and generating child 0
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 7 and generating child 1
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 7 and generating child 2
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 7 and generating child 3
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 7 and generating child 4
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 7 and generating child 5
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 7 and generating child 6
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 7 and generating child 7
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 7 and generating child 8
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Density track: [0.650964394659386, 1.160851860407509, 1.160851860407509, 1.160851860407509, 1.160851860407509, 1.160851860407509, 1.160851860407509, 1.160851860407509, 1.160851860407509, 0.9211557573596307]
+Congestion track: [0.7765178974442978, 0.8880997468517711, 0.8880997468517711, 0.8880997468517708, 0.8880997468517711, 0.888099746851771, 0.8880997468517708, 0.8880997468517711, 0.8880997468517713, 0.874878200387346]
+Wirelength track: [0.111641581525123, 0.09278764635125274, 0.09278764635125274, 0.09278764635125274, 0.09278764635125274, 0.09278764635125274, 0.09278764635125274, 0.09278764635125274, 0.09278764635125274, 0.1229450106236752]
+****************************** At the generation 8
+$$$$$$$$$$$$$$$ Found the best index at 0
+Deleting the remiaing models and info, current size is: 1
+******* Base Model info  in generation 8 *******
+Congestion values 0.7765178974442978
+Wirelength values 0.111641581525123
+Density values 0.650964394659386
+Currently in generation 8 and generating child 0
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 8 and generating child 1
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 8 and generating child 2
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 8 and generating child 3
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 8 and generating child 4
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 8 and generating child 5
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Currently in generation 8 and generating child 6
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Currently in generation 8 and generating child 7
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 8 and generating child 8
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Density track: [0.650964394659386, 0.9297760959337488, 0.8619677029055823, 0.8619677029055823, 0.8619677029055823, 0.8619677029055823, 0.8619677029055823, 0.8619677029055823, 0.8619677029055823, 0.8800233700519817]
+Congestion track: [0.7765178974442978, 0.8431781402914134, 0.8393042564636416, 0.8393042564636417, 0.8393042564636417, 0.8393042564636417, 0.8393042564636416, 0.8393042564636416, 0.8393042564636417, 0.8381471321063265]
+Wirelength track: [0.111641581525123, 0.1024981846437375, 0.09914635877169015, 0.09914635877169015, 0.09914635877169015, 0.09914635877169015, 0.09914635877169015, 0.09914635877169015, 0.09914635877169015, 0.1160273024000342]
+****************************** At the generation 9
+$$$$$$$$$$$$$$$ Found the best index at 0
+Deleting the remiaing models and info, current size is: 1
+******* Base Model info  in generation 9 *******
+Congestion values 0.7765178974442978
+Wirelength values 0.111641581525123
+Density values 0.650964394659386
+Currently in generation 9 and generating child 0
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 9 and generating child 1
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 9 and generating child 2
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Currently in generation 9 and generating child 3
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Currently in generation 9 and generating child 4
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 3
+Finished placing chip with nodes 134/133
+Currently in generation 9 and generating child 5
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 9 and generating child 6
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Currently in generation 9 and generating child 7
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 11
+Finished placing chip with nodes 134/133
+Currently in generation 9 and generating child 8
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Density track: [0.650964394659386, 0.9091606636085204, 0.9650055507704158, 0.822683962029189, 0.8503111641654602, 0.7867450654019197, 0.7791097588173896, 0.795197696201212, 0.7749754396920262, 0.8272328499399879]
+Congestion track: [0.7765178974442978, 0.8503630212412406, 0.8590053879319374, 0.8051404786524404, 0.8209404324373442, 0.8110514319296582, 0.8055491949174116, 0.8019711916908935, 0.8069221669235429, 0.8732254402110421]
+Wirelength track: [0.111641581525123, 0.1149264375404873, 0.1144875333990668, 0.1094824099495745, 0.111675388486185, 0.1059442926031649, 0.1083356358862971, 0.1092262188312247, 0.1093247746632975, 0.119296007486377]

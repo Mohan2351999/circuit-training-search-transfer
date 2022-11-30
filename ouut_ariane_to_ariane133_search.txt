@@ -1,0 +1,72 @@
+Started creating the environment!
+Start loading the latest Checkpoints!
+The global step is: None
+['__add__', '__annotations__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '_asdict', '_field_defaults', '_fields', '_make', '_replace', 'count', 'discount', 'index', 'is_first', 'is_last', 'is_mid', 'observation', 'reward', 'step_type']
+******* Base Model info *******
+Congestion values 0.8817892070314683
+Wirelength values 0.1233821274290395
+Density values 0.8973940833480312
+Finished placing all the nodes
+Model: "policy_location_head"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_8 (Dense)             (1, 2048)                 67584     
+                                                                 
+ re_lu_7 (ReLU)              (1, 2048)                 0         
+                                                                 
+ reshape (Reshape)           (1, 8, 8, 32)             0         
+                                                                 
+ conv2d_transpose (Conv2DTra  (1, 16, 16, 16)          4624      
+ nspose)                                                         
+                                                                 
+ re_lu_8 (ReLU)              (1, 16, 16, 16)           0         
+                                                                 
+ conv2d_transpose_1 (Conv2DT  (1, 32, 32, 8)           1160      
+ ranspose)                                                       
+                                                                 
+ re_lu_9 (ReLU)              (1, 32, 32, 8)            0         
+                                                                 
+ conv2d_transpose_2 (Conv2DT  (1, 64, 64, 4)           292       
+ ranspose)                                                       
+                                                                 
+ re_lu_10 (ReLU)             (1, 64, 64, 4)            0         
+                                                                 
+ conv2d_transpose_3 (Conv2DT  (1, 128, 128, 2)         74        
+ ranspose)                                                       
+                                                                 
+ re_lu_11 (ReLU)             (1, 128, 128, 2)          0         
+                                                                 
+ conv2d_transpose_4 (Conv2DT  (1, 128, 128, 1)         19        
+ ranspose)                                                       
+                                                                 
+ flatten (Flatten)           (1, 16384)                0         
+                                                                 
+=================================================================
+Total params: 73,753
+Trainable params: 73,753
+Non-trainable params: 0
+_________________________________________________________________
+Actor Net:  None
+****************************** At the generation 0
+Currently in generation 0 and generating child 0
+>>>>>>>>>> Choose the mutation 0
+Added weights to a Conv2d layer at index 7
+Finished placing chip with nodes 134/133
+Recorded all the info of the mutated model
+
+Currently in generation 0 and generating child 1
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 5
+Finished placing chip with nodes 134/133
+Recorded all the info of the mutated model
+
+Currently in generation 0 and generating child 2
+>>>>>>>>>> Choose the mutation 1
+Subtract weights to a Conv2d layer at index 9
+Finished placing chip with nodes 134/133
+Recorded all the info of the mutated model
+
+Currently in generation 0 and generating child 3
+>>>>>>>>>> Choose the mutation 2
+Multiply weights to a Conv2d layer at index 5

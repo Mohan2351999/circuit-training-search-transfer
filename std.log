@@ -1,0 +1,6 @@
+Detecting that an object or model or tf.train.Checkpoint is being deleted with unrestored values. See the following logs for the specific values in question. To silence these warnings, use `status.expect_partial()`. See https://www.tensorflow.org/api_docs/python/tf/train/Checkpoint#restorefor details about the status object returned by the restore function.
+Value in checkpoint could not be found in the restored object: (root).agent._optimizer.iter
+Value in checkpoint could not be found in the restored object: (root).agent._optimizer.beta_1
+Value in checkpoint could not be found in the restored object: (root).agent._optimizer.beta_2
+Value in checkpoint could not be found in the restored object: (root).agent._optimizer.decay
+Value in checkpoint could not be found in the restored object: (root).agent._optimizer.learning_rate
