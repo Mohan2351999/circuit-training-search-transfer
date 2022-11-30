@@ -27,6 +27,8 @@ from circuit_training.learning import agent
 
 """ Execute the command python3 -m circuit_training.load_and_restore_model
     to run the notebook.
+
+    Load the policy from the google's ariane chip design and do the inference on the ariane133.
 """
 
 # testcase path
