@@ -33,7 +33,9 @@ scaling to 100s of actors.
 <a href='#Features'>Features</a><br>
 <a href='#Installation'>Installation</a><br>
 <a href='#QuickStart'>Quick start</a><br>
-<a href='#Results'>Results</a><br>
+<a href='#Zero-shot Learning'>Zero-shot learning</a><br>
+<a href='#Finetuning Execution'>Finetuning Scripts</a><br>
+<a href='#Search based transfer learning'>Search Based Transfer Learning Scripts</a><br>
 
 <a id='Installation'></a>
 
