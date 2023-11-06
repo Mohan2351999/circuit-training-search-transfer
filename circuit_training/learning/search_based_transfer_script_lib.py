@@ -27,7 +27,14 @@ from circuit_training.learning import agent
 from circuit_training.learning import learner as learner_lib
 
 import reverb
+
 import tensorflow as tf
+
+physical_devices = tf.config.experimental.list_physical_devices('GPU')
+if len(physical_devices) > 0:
+    tf.config.experimental.set_visible_devices(physical_devices[0], 'GPU')
+    tf.config.experimental.set_memory_growth(physical_devices[0], True)
+
 import numpy as np
 import random
 
@@ -232,7 +239,7 @@ def train(
   # # First create the inference for the model with changed weights. 
   # # Step 1: Save the checkpoint
 
-  # sample_save_dir = "logs/run_02/111/child_models/"
+  # sample_save_dir = "logs/run_02/55/child_models/"
 
   # os.makedirs(sample_save_dir, exist_ok=True)
   

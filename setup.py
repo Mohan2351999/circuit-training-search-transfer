@@ -30,7 +30,6 @@ import version as circuit_training_version  # pylint: disable=g-import-not-at-to
 
 # Default versions the tf-agents dependency.
 TF_AGENTS = 'tf-agents[reverb]'
-TF_AGENTS_NIGHTLY = 'tf-agents-nightly[reverb]'
 
 
 class BinaryDistribution(Distribution):
@@ -67,15 +66,16 @@ class SetupToolsHelper(object):
   def _get_tf_agents_packages(self):
     """Returns required tf_agents package."""
     if self.release:
-      tf_agents_version = TF_AGENTS
+        tf_agents_version = TF_AGENTS
     else:
-      tf_agents_version = TF_AGENTS_NIGHTLY
-
+        tf_agents_version = TF_AGENTS
+        
     # Overrides required versions if tf_version_override is set.
     if self.tf_agents_override:
       tf_agents_version = self.tf_agents_override
 
     return [tf_agents_version]
+
 
   def run_setup(self):
     # Builds the long description from the README.

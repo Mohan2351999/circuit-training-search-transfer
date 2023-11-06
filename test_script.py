@@ -1,7 +1,7 @@
 import os
 
-checkpoint_dir = "./logs/run_01/111/policies/checkpoints/"
-policy_dir = "/home/singamse/Mohan/circuit-training/logs/run_01/111/policies"
+checkpoint_dir = "./logs/run_01/55/policies/checkpoints/"
+policy_dir = "/home/singamse/Mohan/circuit-training/logs/run_01/55/policies"
 
 lst = os.listdir(checkpoint_dir)
 lst.sort()

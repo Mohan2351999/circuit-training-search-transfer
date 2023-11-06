@@ -38,10 +38,10 @@ _INIT_PLACEMENT = flags.DEFINE_string('init_placement', "./circuit_training/envi
                                       'File path to the init placement file.')
 _OUTPUT_PATH = flags.DEFINE_string('output_path', "./test_placement.plc", "File path to the   placement file.")
 _GLOBAL_SEED = flags.DEFINE_integer(
-    'global_seed', 111,
+    'global_seed', 55,
     'Used in env and weight initialization, does not impact action sampling.')
 
-greedy_policy_dir = "/home/singamse/Mohan/circuit-training/logs/run_01/111/policies/policy/"
+greedy_policy_dir = "/home/singamse/Mohan/circuit-training/logs/run_01/55/policies/policy/"
 
 FLAGS = flags.FLAGS
 

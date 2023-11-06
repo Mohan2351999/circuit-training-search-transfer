@@ -27,6 +27,12 @@ from circuit_training.model import model
 import numpy as np
 import tensorflow.compat.v2 as tf
 
+physical_devices = tf.config.experimental.list_physical_devices('GPU')
+if len(physical_devices) > 0:
+    tf.config.experimental.set_visible_devices(physical_devices[0], 'GPU')
+    tf.config.experimental.set_memory_growth(physical_devices[0], True)
+
+
 from tf_agents.drivers import py_driver
 from tf_agents.policies import py_tf_eager_policy
 from tf_agents.specs import array_spec

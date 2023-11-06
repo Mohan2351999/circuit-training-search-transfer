@@ -29,7 +29,7 @@ flags.DEFINE_integer(
     'larger than num_episodes_per_iteration.')
 flags.DEFINE_integer('port', None, 'Port to start the server on.')
 flags.DEFINE_integer(
-    'global_seed', 111,
+    'global_seed', 55,
     'Used in env and weight initialization, does not impact action sampling.')
 
 FLAGS = flags.FLAGS
